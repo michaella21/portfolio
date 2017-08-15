@@ -10,22 +10,7 @@
 		<link rel="stylesheet" href="css/custom.css">
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-  	<script type="text/javascript">
-  		$(function() {
-  		$('[data-toggle="tooltip"]').tooltip()
-			})
-			$(function() {
-  		$('[data-toggle="popover"]').popover()
-			})
-
-  	//Show the short description of each project when the modal is opened.
-   	$(document).on('click','h2.featured-work-label', function (event) {
-          var projTitle = $(this).attr('data-proj-title')
-          var projDescription = $(this).attr('data-proj-description')
-          $('#projTitle.modal-title').text(projTitle)
-          $('#projDescription.row').text(projDescription)
-        	});
-    </script>
+  	<script src="js/portfolio-jstools.js"></script>
 	</head>
 	<body>
 		<!-- Featured-Work-Modal model-->
@@ -59,11 +44,7 @@
 						<h4 class="header-sub text-bold main-color">FULL STACK SORCERESS</h4>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-12">
 						<hr>
-					</div>
-				</div>
 			</div>
 		</header>
 	<!-- all the images are from pixabay.com-->
@@ -80,29 +61,29 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12"> 
-							<h2 class="featured-work">Featured Work</h2>
+							<h2 class="featured-work-header">Featured Work</h2>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-4 blog">
 							<a href="https://second-page-160322.appspot.com/blog" data-toggle="popover" data-trigger="focus hover" data-placement="top" title="click me!" data-content="If you want to visit the actual blog page, please click this image.">
 								<img class="img-responsive featured-work-pic" src="img/blog.jpg" alt="blog pic"></a>
-							<h2 class="featured-work-label" data-toggle="modal" data-target="#workinfo" data-proj-title="Test Blog" data-proj-description="This blog is implemented with Python 2.7, using MVC framework Webapp2 and Jinja2 template engine. The basic user authentification system is applied. Data is memcached and persisted in SQL-based relational DB. API is built to provide json data. Deployed in Google App Engine."><a data-toggle="tooltip" title="click me!">BLOG</a></h2>
-							<h5 class="featured-work-label git-url"><a href="https://github.com/michaella21/blog-wiki" class="git">
-								https://github.com/michaella21/blog-wiki</a></h5>
+							<h2 class="featured-work-title" data-toggle="modal" data-target="#workinfo" data-proj-title="Test Blog" data-proj-description="This blog is implemented with Python 2.7, using MVC framework Webapp2 and Jinja2 template engine. The basic user authentification system is applied. Data is memcached and persisted in SQL-based relational DB. API is built to provide json data. Deployed in Google App Engine."><a data-toggle="tooltip" title="click me!">BLOG</a></h2>
+							<p><a href="https://github.com/michaella21/blog-wiki" class="git">
+								https://github.com/michaella21/blog-wiki</a></p>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-4 wiki">
 							<a href="https://second-page-160322.appspot.com/wiki" data-toggle="popover" data-trigger="focus hover" data-placement="top" title="click me!" data-content="If you want to visit the actual wiki page, please click this image.">
 								<img class="img-responsive featured-work-pic" src="img/wiki.jpg" alt="wiki pic"></a>
-							<h2 class="featured-work-label" data-toggle="modal" data-target="#workinfo" data-proj-title="Wiki Page" data-proj-description="This is a wiki page, where every existing page is editible and non-existing page can be created by the registered user. It is implemented with Python 2.7, using MVC framework Webapp2 and Jinja2 template engine. The basic user authentification system is applied and data is stored in SQL-based relational DB. Deployed in Google App Engine. Currently still in progress to show the history of the previous edits as well as to memcache the data."><a data-toggle="tooltip" title="click me!">WIKI</a></h2>
-							<h5 class="featured-work-label git-url"><a href="https://github.com/michaella21/blog-wiki" class="git">
-							https://github.com/michaella21/blog-wiki</a></h5>
+							<h2 class="featured-work-title" data-toggle="modal" data-target="#workinfo" data-proj-title="Wiki Page" data-proj-description="This is a wiki page, where every existing page is editible and non-existing page can be created by the registered user. It is implemented with Python 2.7, using MVC framework Webapp2 and Jinja2 template engine. The basic user authentification system is applied and data is stored in SQL-based relational DB. Deployed in Google App Engine. Currently still in progress to show the history of the previous edits as well as to memcache the data."><a data-toggle="tooltip" title="click me!">WIKI</a></h2>
+							<p><a href="https://github.com/michaella21/blog-wiki" class="git">
+							https://github.com/michaella21/blog-wiki</a></p>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-4 movie-trailer">
 							<a href="https://second-page-160322.appspot.com/movie-trailer" data-toggle="popover" data-trigger="focus hover" data-placement="top" title="click me!" data-content="If you want to visit the page presenting my favorite movies, please click this image.">
 								<img class="img-responsive featured-work-pic" src="img/movie.jpg" alt="movie pic"></a>
-							<h2 class="featured-work-label" data-toggle="modal" data-target="#workinfo" data-proj-title="Movie Trailer" data-proj-description="This movie trailer page is implemented by python 2.7 and simple jquery. By clicking each poster image, youtube trailer of each movie is played. Clicking the movie title invokes modal popup which shows relevant information about the movie."><a data-toggle="tooltip" title="click me!">MOVIE TRAILER
+							<h2 class="featured-work-title" data-toggle="modal" data-target="#workinfo" data-proj-title="Movie Trailer" data-proj-description="This movie trailer page is implemented by python 2.7 and simple jquery. By clicking each poster image, youtube trailer of each movie is played. Clicking the movie title invokes modal popup which shows relevant information about the movie."><a data-toggle="tooltip" title="click me!">MOVIE TRAILER
 							</a></h2>
-							<h5 class="featured-work-label git-url"><a href="https://github.com/michaella21/movie-trailer" class="git">
-							https://github.com/michaella21/movie-trailer</a></h5>
+							<p><a href="https://github.com/michaella21/movie-trailer" class="git">
+							https://github.com/michaella21/movie-trailer</a></p>
 						</div>
 					</div>
 				</div>

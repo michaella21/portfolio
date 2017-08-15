@@ -1,95 +1,93 @@
 
 /* Position 'Featured work' label to be centered 
 when there is only one column in a smaller device.*/
-@media screen and (max-width: 768px){
-	h2.featured-work{
+@media screen and (max-width: 768px) {
+	.featured-work-header {
 		text-align: center;
 	}
-	h5.featured-work-label{
-		font-size: 15px;
-	}
-
-
 }
+
 /* Keep the logo size at a proper level when the screen size gets larger
 so that it does not overwhelm the names on the right sied of the header.*/
-@media screen and (min-width: 460px){
-	.logo{
+@media screen and (min-width: 460px) {
+	.logo {
 		max-width: 85px;
 		height: auto;
 	}
 }
 
-/* to align logo with the name which has 20px margin on top*/
-.logo{
-	position: relative;
-	top: 20px;
-}
-.header-name{
-	color: #2d3c49;
-	letter-spacing: 0.1em;
-}
-
-.text-thin{
-	font-weight: 100;
-}
-
-.text-bold{
-	font-weight: 400;
-}
-
-hr{
+hr {
 	background-color: #7d97ad;
 	height: 3px;
 	border: none;
 }
 
-h2.featured-work{
+p {
+	color: #2d3c49;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 400;
+	padding: 10px;
+	margin-top: -5px;
+	margin-bottom:5px;
+}
 
+/* to align logo with the name which has 20px margin on top*/
+.logo {
+	position: relative;
+	top: 20px;
+}
+
+.header-name {
+	color: #2d3c49;
+	letter-spacing: 0.1em;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.text-bold {
+	font-weight: 400;
+}
+
+.featured-work-header {
 	padding-left: 0.3em;
 	color: #7d97ad;
 	font-weight: 300;
 	letter-spacing: 0.1em;
 }
 
-.featured-work-label{
+.featured-work-title {
 	color: #2d3c49;
 	text-align: center;
 	font-weight: 400;
 	letter-spacing: 0.03em;
 	padding: 10px;
-	
-}
-h2.featured-work-label{
 	margin-top: 5px;
-	margin-bottom: 0px;
-}
-
-h5.featured-work-label{
-	margin-top: -5px;
-	margin-bottom:5px;
+	margin-bottom: 0;
 }
 
 /* to make sure that the link is easy to click with fingers*/
-a.git{
+a.git {
 	padding:18px;
 }
 
 /*feautred work pics should be centered*/
-.featured-work-pic{
+.featured-work-pic {
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .hanging-close {
-        position: absolute;
-        top: -12px;
-        right: -12px;
-        z-index: 9001;
-        }
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    z-index: 9001;
+}
 
-#workinfo {
-	top: 30%;
+.modal {
+	top: 20%;
 }
 
 .modal-title {
@@ -101,5 +99,4 @@ a.git{
 .modal-body {
     padding: 32px;
     padding-top: 20px;
-
 }
