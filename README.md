@@ -15,7 +15,7 @@ This repository contains files to creat **two** different portfolio HTML pages. 
    
    : This version is written to be used as my own portfolio to present my work (in-progress) so far. In addition to the responsiveness of the basic version, small js changes were made. 
    
-   If you hover around the **feature work image** and **label**, it will show up some popover/tooltip, which was written in simple jquery and included in the _my_portfolio.html_ file. By clicking the featured work images and github address, each event is supposed to link to the relevant webpage. In addition, clicking the featured work label should invoke the modal popup to provide basic information about the each work. 
+   If you hover around the **feature work image** and **label**, it will show up some popover/tooltip, which was written in simple jquery and included in the _portfolio-jstool.js_ file. By clicking the featured work images and github address, each event is supposed to link to the relevant webpage. In addition, clicking the featured work label should invoke the modal popup to provide basic information about the each work. 
 
 ## Notice
 
